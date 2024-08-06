@@ -1,6 +1,4 @@
-
-/* O seletor * aplica estilos a todos os elementos. Aqui, estamos removendo as margens e preenchimentos padrões */
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Garante que padding e border são incluídos na largura/altura total do elemento */
@@ -12,6 +10,7 @@ body {
     background-color: #eaeaea; /* Cor de fundo clara para o corpo */
     color: #333; /* Cor de texto mais escura */
     padding: 20px; /* Espaço entre o conteúdo e a borda da janela */
+    text-align: center;
 }
 
 /* Estilos para o container principal do currículo */
@@ -23,6 +22,7 @@ body {
     border-radius: 10px; /* Borda arredondada */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
     padding: 20px; /* Espaço interno entre a borda do container e seu conteúdo */
+    text-align: left; /* Alinha o texto à esquerda dentro do container */
 }
 
 /* Estilos para o cabeçalho do perfil */
@@ -48,4 +48,13 @@ ul {
 
 ul li {
     margin: 10px 0; /* Espaço entre os itens da lista */
+}
+
+.profile-image {
+    float: right; /* Alinha a imagem à direita */
+    margin: 0 0 20px 20px; /* Espaço ao redor da imagem */
+    border-radius: 50%; /* Deixa a imagem em formato redondo */
+    width: 150px; /* Define a largura da imagem */
+    height: 150px; /* Define a altura da imagem */
+    object-fit: cover; /* Garante que a imagem se encaixe dentro do círculo */
 }
